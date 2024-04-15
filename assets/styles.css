@@ -1,0 +1,38 @@
+body {
+    'font-family': 'Arial, sans-serif';
+    padding: 10px 10px;
+}
+
+.btn-cs {
+    color: #ffffff;
+    background: #1690D8;
+    cursor: pointer;
+    'font-family': 'Arial, sans-serif';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 20px 20px 0px 10px;
+    border: 2px solid #1690D8;
+    border-radius: 40px;
+    box-shadow: 2px 2px 6px #aaa;
+    transition: .6s ease;
+}
+.btn-cs:hover {
+    box-shadow: 0px 0px 0px #aaa;
+}
+
+.btn-cs.invert:hover {
+    color: #1690D8;
+    background: transparent;
+}
+
+.btn-cs.scaleOut:hover {
+    transform: scale(1.2);
+}
+
+.btn-cs.fade:hover {
+    opacity: 0.85;
+}
+
+
+
