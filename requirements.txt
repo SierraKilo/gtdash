@@ -299,3 +299,4 @@ xlrd @ file:///croot/xlrd_1685030938141/work
 yarl @ file:///croot/yarl_1701105127787/work
 ydata-profiling==4.3.1
 zstandard @ file:///croot/zstandard_1677013143055/work
+gunicorn
