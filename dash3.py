@@ -18,6 +18,7 @@ import base64
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, assets_folder='assets', assets_url_path='/assets/') #initialising Dash application
+server = app.server
 
 # path = '/content/drive/MyDrive/Colab Notebooks/Project/'
 path = '/home/shubham/Desktop/Project/Practice/assets/'
@@ -654,4 +655,4 @@ def test_and_display(selected_mode, n_clicks_individual, n_submit_temp, n_clicks
     
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
+    app.run_server(debug=True, use_reloader=False)
