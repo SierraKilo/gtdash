@@ -655,4 +655,4 @@ def test_and_display(selected_mode, n_clicks_individual, n_submit_temp, n_clicks
     
 
 if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False)
+    app.run_server(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
