@@ -32,7 +32,7 @@ model_file = "project_model_rf.pkl"
 loaded_model = pickle.load(open(path+model_file, "rb"))
 
 input_range_low = 20    
-input_range_high = 7
+input_range_high = 100
 temp_range_low = 24
 temp_range_high = 35
 input_cols = ['FCU_POS', 'INLET_AIR_TEMP']
@@ -217,7 +217,7 @@ app.layout = html.Div([
                 max=input_range_high,
                 step=1,  # Adjust the step as needed
                 value=40,  # Set an initial value
-                marks={i / 100: str(i / 100) for i in range(1, 70, 5)},  # Add marks for specific values
+                marks={i: str(i) for i in range(20, 100, 5)},  # Add marks for specific values
                 tooltip={'placement': 'bottom', 'always_visible': True}
             ),
             # html.H2("Enter Ambient Pressure (kg/cc):",
